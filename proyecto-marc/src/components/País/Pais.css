@@ -1,0 +1,42 @@
+.divPlayButton {
+  text-align: center;
+}
+
+.playButton {
+  background-color: #c21010;
+  color: white;
+  padding: 30px 90px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.cardBodyPlay {
+  margin: 2% 20%;
+  height: 100%;
+
+  text-align: center;
+}
+
+.namePlay {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 250%;
+}
+
+.playImg {
+  width: 400px;
+  height: 200px;
+}
+
+.questionPlay {
+  font-weight: bold;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.optionsPlay {
+  border: 1px solid black;
+}
