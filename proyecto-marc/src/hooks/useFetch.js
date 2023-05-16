@@ -16,6 +16,7 @@ export const useFetch = () => {
             setIsLoading(false);
           })
           .catch((err) => {
+            console.log(err);
             setIsLoading(false);
             setHasError(true);
           });

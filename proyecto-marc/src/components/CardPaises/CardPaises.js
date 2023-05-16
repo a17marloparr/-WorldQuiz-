@@ -19,7 +19,7 @@ function CardPaises(props) {
               <p>Capital: <span className="colorDatosCardPaises">{props.capital}</span></p>
               <p>Area: <span className="colorDatosCardPaises">{props.area} km2</span></p>
               <p>Population: <span className="colorDatosCardPaises">{props.poblacion}</span></p>
-              <p>Official language: <span className="colorDatosCardPaises">{props.lengua.join(', ')}</span></p>
+              <p>Official languages: <span className="colorDatosCardPaises">{props.lengua}</span></p>
             </div>
           </div>
         </div>

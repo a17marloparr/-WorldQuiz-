@@ -4,17 +4,23 @@ import CardPaises from "../CardPaises/CardPaises";
 import './Europe.css'
 
 export default function Europe(props) {
+  const numberFormat = (number) => {
+    const exp = /(\d)(?=(\d{3})+(?!\d))/g;
+    const rep = '$1,';
+    return number.toString().replace(exp,rep);
+  }
+
   function createCard(data) {
     return (
       <CardPaises
-        key = {data.europe.name.common}
-        bandera = {data.europe.flags.png}
-        nombre = {data.europe.name.common}
+        key = {data.europe.capital}
+        bandera = {data.europe.flags}
+        nombre = {data.europe.common}
         continente = {data.europe.continents}
         capital = {data.europe.capital}
-        lengua = {Object.values(data.europe.languages)}
-        area = {data.europe.area.toLocaleString("en-US")}
-        poblacion = {data.europe.population.toLocaleString("en-US")}
+        lengua = {data.europe.languages}
+        area = {numberFormat(data.europe.area)}
+        poblacion = {numberFormat(data.europe.population)}
       />
     )
   }

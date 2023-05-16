@@ -11,12 +11,12 @@ export default function Principal() {
         <img src={logo} className="logo"></img>
       </div>
       <div className="botones">
-          <div className="boton">
-            <Link to="/play">Play</Link>
-          </div>
-          <div className="boton">
-            <Link to="/countries">Countries</Link>
-          </div>
+        <div className="boton">
+          <Link to="/play">Play</Link>
+        </div>
+        <div className="boton">
+          <Link to="/countries">Countries</Link>
+        </div>
       </div>
     </div>
   );
