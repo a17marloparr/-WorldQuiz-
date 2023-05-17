@@ -5,7 +5,7 @@
 .playButton {
   background-color: #c21010;
   color: white;
-  padding: 30px 90px;
+  padding: 20px 60px;
   cursor: pointer;
   border: none;
   border-radius: 5px;
@@ -14,7 +14,7 @@
 }
 
 .cardBodyPlay {
-  margin: 2% 20%;
+  margin: 1% 20%;
   height: 100%;
 
   text-align: center;
@@ -29,6 +29,7 @@
 .playImg {
   width: 400px;
   height: 200px;
+  border: 1px solid black;
 }
 
 .questionPlay {
@@ -38,5 +39,33 @@
 }
 
 .optionsPlay {
-  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.optionsPlay > div {
+  width: 40%;
+  height: 100px;
+  line-height: 600%;
+  text-align: center;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  border: 5px solid;
+}
+
+.succes {
+  background-color: green;
+}
+
+.failure {
+  background-color: #c21010;
+}
+
+.correctAnswers {
+  margin-top: 20px;
+  font-weight: 700;
 }

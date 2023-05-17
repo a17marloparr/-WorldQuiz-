@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useFetchCountries } from "../../hooks/useFetchCountries";
 
 import Europe from "../../components/Europe/Europe";
